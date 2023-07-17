@@ -67,26 +67,15 @@ class EmojiGame extends Component {
   render() {
     const {emojisList} = this.props
     const shuffledEmojisList = emojisList.sort(() => Math.random() - 0.5)
-    const {isGameGoing, topScore, currentScore, clickedEmojisList} = this.state
+    const {isGameGoing, topScore, currentScore} = this.state
     const emojisLength = emojisList.length
     //  console.log(`currentScore in render ${currentScore}`)
-
-    const checkIfUserWon = () => {
-      if (clickedEmojisList.length === emojisLength) {
-        return true
-      }
-      return false
-    }
-    const doesUserWon = checkIfUserWon()
-
-    console.log(doesUserWon)
-
     return (
       <div className="main-container">
         <NavBar
           score={currentScore}
           topScore={topScore}
-          doesUserWon={doesUserWon}
+          doesUserWon={!isGameGoing}
         />
         <div className="game-container">
           {isGameGoing && (
