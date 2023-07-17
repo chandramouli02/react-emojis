@@ -1,0 +1,43 @@
+.result-container {
+  background-color: #ffffff33;
+  border: 1px solid #ffffff20;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  width: 80%;
+}
+.result-container-elements {
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+
+.result-container-elements > h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.score {
+  font-size: 30px;
+  font-weight: 600;
+  color: #6a59ff;
+}
+.result-container-elements > p {
+  font-weight: 600;
+  font-size: 20px;
+}
+.result-container-elements > button {
+  background-color: gold;
+  border: 0px solid;
+  border-radius: 20px;
+  height: 30px;
+  width: 80px;
+  color: black;
+  font-size: 10px;
+  font-weight: 600;
+  outline: none;
+}
+
+.result-container > img {
+  width: 50%;
+}
